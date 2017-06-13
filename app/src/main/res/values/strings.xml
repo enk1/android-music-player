@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="artist_details_label">Artist details</string>
+    <string name="song_details_label">Song details</string>
+    <string name="artists_list_label">Artists list</string>
+    <string name="screen_play">Screen: Play now!</string>
+    <string name="screen_play_description">Description: Displaying song name, artist and progressbar</string>
+    <string name="button_artist_detail">Artist detail</string>
+    <string name="button_song_detail">Song detail</string>
+    <string name="button_artists_list">Artist list</string>
+</resources>
