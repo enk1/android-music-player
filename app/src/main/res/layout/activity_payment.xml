@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/view_song_detail"
-    tools:context="com.gmail.grzywaczewskijakub.musicapp.musicapp.SongDetail">
+    android:id="@+id/view_payment"
+    tools:context="com.gmail.grzywaczewskijakub.musicapp.musicapp.PaymentActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginBottom="25dp"
         android:textColor="@color/primaryTextColor"
-        android:text="@string/screen_song_detail"
+        android:text="@string/screen_payment"
         android:textAlignment="center" />
 
     <TextView
@@ -23,7 +23,16 @@
         android:layout_marginTop="25dp"
         android:layout_marginBottom="25dp"
         android:textColor="@color/primaryTextColor"
-        android:text="@string/screen_song_detail_description"
+        android:text="@string/screen_payment_description"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/primaryTextColor"
+        android:text="@string/screen_payment_usage"
         android:textAlignment="center" />
 
     <LinearLayout
@@ -42,15 +51,16 @@
             android:text="@string/button_artist_detail" />
 
         <Button
-            android:id="@+id/button_payment"
+            android:id="@+id/button_song_detail"
             android:layout_margin="5dp"
             android:textColor="@color/primaryButtonTextColor"
             android:background="@color/colorPrimaryDark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/button_payment" />
+            android:text="@string/button_song_detail" />
 
     </LinearLayout>
+
 
 </LinearLayout>

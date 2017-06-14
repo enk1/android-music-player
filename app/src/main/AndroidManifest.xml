@@ -25,6 +25,9 @@
         <activity
             android:name=".ArtistList"
             android:label="@string/artists_list_label" />
+        <activity
+            android:name=".PaymentActivity"
+            android:label="@string/payment_label" />
     </application>
 
 </manifest>

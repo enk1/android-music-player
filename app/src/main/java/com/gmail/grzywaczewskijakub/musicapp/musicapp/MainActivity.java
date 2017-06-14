@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView artistDetails = (TextView) findViewById(R.id.button_artist_detail);
+        TextView songDetails = (TextView) findViewById(R.id.button_song_detail);
+
         artistDetails.setOnClickListener(new OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -24,5 +26,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        songDetails.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, SongDetail.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

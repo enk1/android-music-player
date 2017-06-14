@@ -7,30 +7,31 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-public class ArtistDetail extends AppCompatActivity {
+public class PaymentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_artist_detail);
+        setContentView(R.layout.activity_payment);
 
-        TextView payment = (TextView) findViewById(R.id.button_payment);
-        TextView artistList = (TextView) findViewById(R.id.button_artists_list);
+        TextView songDetail = (TextView) findViewById(R.id.button_song_detail);
+        TextView artistDetail = (TextView) findViewById(R.id.button_artist_detail);
 
-        payment.setOnClickListener(new OnClickListener() {
+        songDetail.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ArtistDetail.this, PaymentActivity.class);
+                Intent i = new Intent(PaymentActivity.this, SongDetail.class);
                 startActivity(i);
             }
         });
 
-        artistList.setOnClickListener(new OnClickListener() {
+        artistDetail.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ArtistDetail.this, ArtistList.class);
+                Intent i = new Intent(PaymentActivity.this, ArtistDetail.class);
                 startActivity(i);
             }
         });
+
     }
 }
